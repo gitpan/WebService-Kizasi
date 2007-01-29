@@ -1,0 +1,16 @@
+# http://module-build.sourceforge.net/META-spec.html
+#XXXXXXX This is a prototype!!!  It will change in the future!!! XXXXX#
+name:         WebService-Kizasi
+version:      v0.1.0
+version_from: lib/WebService/Kizasi.pm
+installdirs:  site
+requires:
+    Class::Accessor::Fast:         0
+    LWP:                           0
+    Test::Base:                    0
+    URI::Escape:                   0
+    version:                       0
+    XML::RSS:                      0
+
+distribution_type: module
+generated_by: ExtUtils::MakeMaker version 6.30
