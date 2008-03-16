@@ -1,6 +1,6 @@
 package WebService::Kizasi;
 
-use version; our $VERSION = qv('0.01');
+use version; our $VERSION = qv('0.02');
 
 use warnings;
 use strict;
@@ -189,7 +189,7 @@ for more details.
 =head1 DEPENDENCIES
 
 Class::Accessor::Fast,
-XML::RSS,
+XML::RSS::LibXML,
 version,
 LWP::UserAgent,
 URI::Escape,

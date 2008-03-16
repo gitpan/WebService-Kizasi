@@ -4,7 +4,7 @@ use ExtUtils::MakeMaker;
 
 WriteMakefile(
     NAME          => 'WebService::Kizasi',
-    AUTHOR        => 'DAIBA, Keiichi <keiichi@tokyo.pm.org>',
+    AUTHOR        => 'DAIBA, Keiichi <daiba@cpan.org>',
     VERSION_FROM  => 'lib/WebService/Kizasi.pm',
     ABSTRACT_FROM => 'lib/WebService/Kizasi.pm',
     PL_FILES      => {},
@@ -12,7 +12,7 @@ WriteMakefile(
         'Test::Base'            => 0,
         'version'               => 0,
         'Class::Accessor::Fast' => 0,
-        'XML::RSS'              => 0,
+        'XML::RSS::LibXML'      => 0,
         'LWP'                   => 0,
         'URI::Escape'           => 0,
     },

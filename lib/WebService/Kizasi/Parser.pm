@@ -4,7 +4,7 @@ use strict;
 use warnings;
 use Carp;
 
-use XML::RSS;
+use XML::RSS::LibXML;
 use WebService::Kizasi::Item;
 use WebService::Kizasi::Items;
 
@@ -13,7 +13,7 @@ sub parse {
     my ( $rss, $ret, @items );
     $ret = new WebService::Kizasi::Items;
     if ( $res->is_success ) {
-        $rss = new XML::RSS;
+        $rss = new XML::RSS::LibXML;
         eval { $rss->parse( $res->content ) };
         if ($@) {
             $ret->status('RSSParseError');
